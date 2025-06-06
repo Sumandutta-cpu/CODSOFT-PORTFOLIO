@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Suman Dutta | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Poppins', sans-serif; background: #f5f7fa; color: #222; }
+    header { background: linear-gradient(135deg, #2b5876, #4e4376); color: #fff; padding: 30px 40px; text-align: center; }
+    header img { width: 120px; height: 120px; border-radius: 50%; object-fit: cover; border: 4px solid #fff; box-shadow: 0 4px 12px rgba(0,0,0,0.3); }
+    header h1 { font-size: 2.2em; margin-top: 10px; }
+    header p { font-size: 1.1em; color: #eee; }
+    nav { background: #333; padding: 12px; text-align: center; }
+    nav a { color: #fff; margin: 0 20px; text-decoration: none; font-weight: 600; transition: color 0.3s ease; }
+    nav a:hover { color: #ff9800; }
+    section { padding: 50px 20px; max-width: 1000px; margin: auto; }
+    h2 { margin-bottom: 25px; color: #2b5876; font-size: 1.8em; }
+    .project, .edu-block, .contact-info, .what-i-do-block {
+      background: #fff; padding: 25px; margin-bottom: 25px; border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1); transition: transform 0.3s ease;
+    }
+    .project:hover, .edu-block:hover, .contact-info:hover, .what-i-do-block:hover { transform: translateY(-5px); }
+    footer { text-align: center; padding: 25px; background: #2b5876; color: #ddd; }
+    .button { background: #ff9800; color: #fff; padding: 12px 24px; text-decoration: none; border-radius: 30px; font-weight: bold; box-shadow: 0 4px 10px rgba(0,0,0,0.2); transition: all 0.3s ease; display: inline-block; }
+    .button:hover { background: #f57c00; transform: scale(1.05); }
+    .skill-item { margin-bottom: 20px; }
+    .skill-title { font-weight: bold; margin-bottom: 5px; }
+    .progress-bar, .prof-bar {
+      background-color: #ddd;
+      border-radius: 20px;
+      overflow: hidden;
+      height: 20px;
+      box-shadow: inset 0 1px 3px rgba(0,0,0,0.2);
+    }
+    .progress, .prof-progress {
+      height: 100%;
+      text-align: right;
+      padding-right: 10px;
+      line-height: 20px;
+      color: white;
+      font-size: 12px;
+      font-weight: bold;
+      width: 0; /* Start with 0 width for animation */
+      transition: width 2s ease;
+    }
+    .progress {
+      background: linear-gradient(90deg, #4fc3f7, #0288d1);
+    }
+    .prof-progress {
+      background: linear-gradient(90deg, #ff9800, #f57c00);
+    }
+    .prof-item { margin-bottom: 25px; display: flex; flex-direction: column; gap: 6px; }
+    .prof-title { font-weight: bold; display: flex; align-items: center; gap: 10px; font-size: 1.1em; }
+    .prof-title i { color: #f57c00; }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="profile.jpg" alt="Suman Dutta" />
+    <h1>Suman Dutta</h1>
+    <p>Passionate Web Developer & Tech Explorer</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#whatido">What I Do</a>
+    <a href="#proficiency">Proficiency</a>
+    <a href="#skills">Skills</a>
+    <a href="#education">Education</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I’m Suman Dutta, a tech enthusiast and aspiring developer currently pursuing my degree at the Institute of Engineering and Management, Kolkata. I love building creative web interfaces and solving real-world problems through code. I also enjoy editing and photography in my free time.</p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>🔐 Fingerprint Door Lock & Unlock System</h3>
+      <p>Developed using Arduino UNO and fingerprint sensor. Secure system allows door control based on fingerprint verification.</p>
+    </div>
+    <div class="project">
+      <h3>💳 Student Fees Management Website</h3>
+      <p>A frontend web application using HTML & CSS that enables admin to manage, track, and store student fee payments efficiently.</p>
+    </div>
+    <div class="project">
+      <h3>🌐 Internship Project at Prodigy Academy</h3>
+      <p>Completed web dev internship at Prodigy Academy. Worked on responsive design, UI components, and frontend tools like HTML, CSS, JS. Gained real-world experience in user-centered development.</p>
+    </div>
+  </section>
+
+  <section id="whatido">
+    <h2>What I Do</h2>
+    <div class="what-i-do-block">
+      <h3>💻 Web Development</h3>
+      <p>Building responsive and dynamic websites using modern technologies like HTML, CSS, JavaScript, and frameworks.</p>
+    </div>
+    <div class="what-i-do-block">
+      <h3>🧩 Problem Solving</h3>
+      <p>Practicing algorithms and data structures to solve complex problems efficiently and write optimized code.</p>
+    </div>
+  </section>
+
+  <section id="proficiency">
+    <h2>🚀 Proficiency</h2>
+    <div class="prof-item">
+      <div class="prof-title"><i class="fas fa-code"></i> Frontend Web Development</div>
+      <div class="prof-bar"><div class="prof-progress" data-width="95%">95%</div></div>
+    </div>
+    <div class="prof-item">
+      <div class="prof-title"><i class="fas fa-database"></i> Backend Basics</div>
+      <div class="prof-bar"><div class="prof-progress" data-width="90%">90%</div></div>
+    </div>
+    <div class="prof-item">
+      <div class="prof-title"><i class="fas fa-terminal"></i> Programming Logic</div>
+      <div class="prof-bar"><div class="prof-progress" data-width="90%">90%</div></div>
+    </div>
+    <div class="prof-item">
+      <div class="prof-title"><i class="fas fa-brain"></i> Problem Solving / DSA</div>
+      <div class="prof-bar"><div class="prof-progress" data-width="95%">95%</div></div>
+    </div>
+    <div class="prof-item">
+      <div class="prof-title"><i class="fab fa-git-alt"></i> Git & GitHub</div>
+      <div class="prof-bar"><div class="prof-progress" data-width="85%">85%</div></div>
+    </div>
+    <div class="prof-item">
+      <div class="prof-title"><i class="fas fa-paint-brush"></i> UI/UX Design</div>
+      <div class="prof-bar"><div class="prof-progress" data-width="70%">70%</div></div>
+    </div>
+  </section>
+
+  <section id="skills" class="skills">
+    <h2>Skills</h2>
+    <div class="skill-item">
+      <div class="skill-title">Java</div>
+      <p>Java is a robust, object-oriented language used in web, mobile, and backend development.</p>
+      <div class="progress-bar"><div class="progress" data-width="85%">85%</div></div>
+    </div>
+    <div class="skill-item">
+      <div class="skill-title">Python</div>
+      <p>Python is a simple, powerful language for web apps, scripting, and data science.</p>
+      <div class="progress-bar"><div class="progress" data-width="80%">80%</div></div>
+    </div>
+    <div class="skill-item">
+      <div class="skill-title">C</div>
+      <p>C is a foundational systems programming language.</p>
+      <div class="progress-bar"><div class="progress" data-width="75%">75%</div></div>
+    </div>
+    <div class="skill-item">
+      <div class="skill-title">C++</div>
+      <p>C++ is an OOP language used in software, games, and high-performance systems.</p>
+      <div class="progress-bar"><div class="progress" data-width="78%">78%</div></div>
+    </div>
+    <div class="skill-item">
+      <div class="skill-title">HTML</div>
+      <p>HTML structures web pages and apps.</p>
+      <div class="progress-bar"><div class="progress" data-width="90%">90%</div></div>
+    </div>
+    <div class="skill-item">
+      <div class="skill-title">CSS</div>
+      <p>CSS styles and lays out HTML elements.</p>
+      <div class="progress-bar"><div class="progress" data-width="88%">88%</div></div>
+    </div>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <div class="edu-block"><strong>Kenjakura Molebona High School</strong><br />(2015 – 2020)</div>
+    <div class="edu-block"><strong>Institute of Engineering and Management, Kolkata</strong><br />(2023 – 2027)</div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="contact-info">
+      <p><strong>Phone:</strong> 9083768145</p>
+      <p><strong>Email:</strong> <a href="mailto:duttsuman0405@gmail.com">duttsuman0405@gmail.com</a></p>
+      <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/suman-dutta-a1066928a/" target="_blank">linkedin.com/in/suman-dutta-a1066928a</a></p>
+      <p><strong>Instagram:</strong> <a href="https://instagram.com/suman.dutta0405" target="_blank">@suman.dutta0405</a></p>
+       <p><strong>GitHub:</strong> <a href="https://github.com/Sumandutta-cpu" target="_blank">github.com/Sumandutta-cpu</a></p>
+    </div>
+  </section>
+
+  <section id="cv">
+  <h2>My CV</h2>
+  <div style="text-align: center; margin-top: 20px;">
+    <a class="button" href="SUMAN DUTTA_CV_12023002001328_Resume (1) (1).pdf" target="_blank" download>
+      📄 Download My CV
+    </a>
+  </div>
+</section>
+
+
+  <footer>
+    &copy; 2025 Suman Dutta | All Rights Reserved
+  </footer>
+
+  <script>
+    // Animate proficiency and skill bars when they scroll into view
+    function animateBarsOnScroll() {
+      const bars = document.querySelectorAll('.prof-progress, .progress');
+      const triggerBottom = window.innerHeight * 0.85;
+
+      bars.forEach(bar => {
+        const barTop = bar.getBoundingClientRect().top;
+        if (barTop < triggerBottom) {
+          const targetWidth = bar.getAttribute('data-width');
+          bar.style.width = targetWidth;
+        } else {
+          bar.style.width = '0';
+        }
+      });
+    }
+
+    window.addEventListener('scroll', animateBarsOnScroll);
+    window.addEventListener('load', animateBarsOnScroll);
+  </script>
+</body>
+</html>
